@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <!-- FONTAWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE-FONTS SOURCE SANS PRO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE-FONTS GEMENU LIBRE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--- CSS LINK TO HMTL-->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <main class="main-grid">
+      <!-- GRID-1 -->
+      <div class="secondary-grid-1">
+        <!-- SIDEBAR -->
+        <div class="side-bar-container">
+          <div class="left-logo-container">
+            <a href=""><img src="./icons/sideLogo.svg" /></a>
+          </div>
+
+          <div class="left-socials-container">
+            <a href=""><img src="./socials/instagram.svg" /></a>
+            <a href=""><img src="./socials/twitter.svg" /></a>
+            <a href=""><img src="./socials/facebook.svg" /></a>
+          </div>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav>
+          <ul>
+            <li><a href="">Plants</a></li>
+            <li><a href="">Containers</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- SLOGAN -->
+        <div class="slogan-container">
+          <h1>
+            <span>Bring</span>
+            <span class="bold">nature</span>
+            <span>into</span>
+          </h1>
+          <h1>
+            <span>your home</span>
+          </h1>
+        </div>
+
+        <!-- ACTION BUTTON -->
+        <div class="action-button-container">
+          <button><a href="">Create arrangment</a></button>
+        </div>
+
+        <!-- MAIN P -->
+        <div class="slogan-p-container">
+          <img src="./icons/circles.svg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quam
+            beatae nihil veniam eum, illo excepturi modi necessitatibus minus
+            eligendi fugit omnis exercitationem sequi et.
+          </p>
+        </div>
+
+        <!-- CAROUSEL -->
+        <div class="carousel-container">
+          <div class="left-arrow-container" onclick="change_pic_bk()">
+            <img src="./icons/leftArrow.svg" />
+          </div>
+          <div class="current-img-container">
+            <img src="./carousel/flowers1.jpg" />
+            <div class="current-num">01</div>
+          </div>
+          <div class="right-arrow-container" onclick="change_pic_fw()">
+            <img src="./icons/rightArrow.svg" />
+          </div>
+        </div>
+
+        <div class="background-img">
+          <img src="./pics/leavesPNG.png" />
+        </div>
+      </div>
+
+      <!-- GRID-2 -->
+      <div class="secondary-grid-2">
+        <!-- MAIN PRODUCT CART -->
+        <div class="main-product-cart">
+          <h2>Eucalyptus Branch</h2>
+          <div class="cart-single">
+            <h3>Single branch</h3>
+            <h3>9,99$</h3>
+          </div>
+          <div class="cart-multi">
+            <h3>5x Branches</h3>
+            <h3>45,99$</h3>
+          </div>
+          <div class="inputs">
+            <div class="input">
+              <input type="radio" />
+              <span>Leaflet</span>
+            </div>
+            <div class="input">
+              <input type="radio" />
+              <span>Care tips</span>
+            </div>
+            <div class="input">
+              <input type="radio" />
+              <span>SMS reminder</span>
+            </div>
+            <div class="input">
+              <input type="radio" />
+              <span>None</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAIN PRODUCT DISPLAYED -->
+        <div class="main-product">
+          <div class="img-product-container">
+            <img src="./pics/pot.png" />
+            <div class="bg1">
+              <img src="./icons/leaves-branch.svg" />
+            </div>
+          </div>
+          <div class="points-container">
+            <div class="points-img-container">
+              <div class="point-img">
+                <img src="./icons/watering-can.svg" class="icon1" />
+              </div>
+              <div class="point-img">
+                <img src="./icons/plant.svg" class="icon2" />
+              </div>
+              <div class="point-img">
+                <img src="./icons/thermometer.svg" class="icon3" />
+              </div>
+            </div>
+            <div class="product-details-container">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum inventore nisi porro ut dicta vero doloremque id, earum
+                architecto quis!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- BARS MOBILE -->
+        <div class="mobile-bars-container" style="align-self: flex-start">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </main>
+
+    <div class="bg">
+      <img src="./background/Asset1.png" alt="" />
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
